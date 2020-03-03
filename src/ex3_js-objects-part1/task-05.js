@@ -6,8 +6,7 @@ function makeCopyObj(obj) {
       typeof obj === 'object' &&
       !Array.isArray(obj) ) {
 
-        let copy = Object.assign({}, obj);
-        return copy;
+        return Object.assign({}, obj);
       }
   return obj;
 }
