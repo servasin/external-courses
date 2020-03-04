@@ -5,8 +5,10 @@ function deepCopy(obj) {
     return obj;
   }
   let copy = new obj.constructor();
-  for (let key in obj) { // eslint-disable-line guard-for-in
-    copy[key] = deepCopy( obj[key] );
+  for (var key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      copy[key] = deepCopy( obj[key] );
+    }
   }
   return copy;
 }
