@@ -2,7 +2,6 @@
 
 function makeCopyObj(obj) {
   if (obj !== null &&
-      obj !== undefined &&
       typeof obj === 'object' &&
       !Array.isArray(obj) ) {
 
