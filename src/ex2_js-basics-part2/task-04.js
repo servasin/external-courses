@@ -1,20 +1,20 @@
 'use strict'
 
 function isIdenticalValues(arr) {
-  if (Array.isArray(arr) === false) {
+  if (!Array.isArray(arr)) {
     return 'это не массив';
   }
 
-  let isEqually = true
+  let isEqual = true
 
   for (let i = 0; i < arr.length; i++) {
     if(arr[i] === arr[0]) {
-      isEqually = true;
+      isEqual = true;
     } else {
-      isEqually = false;
+      isEqual = false;
     }
   }
-  return isEqually;
+  return isEqual;
 }
 
 module.exports = isIdenticalValues;

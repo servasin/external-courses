@@ -1,13 +1,13 @@
 'use strict'
 
 function getEvenOddElements(arr) {
-  if (Array.isArray(arr) === false) {
-    return console.log('this is not a array');;
+  if (!Array.isArray(arr)) {
+    return console.log('это не массив');;
   }
 
-  let zeroCounter = 0;
-  let evenCounter = 0;
-  let oddCounter = 0;
+  let zeroCounter = 0,
+      evenCounter = 0,
+      oddCounter = 0;
   for (var i = 0; i < arr.length; i++) {
     if ( (typeof(arr[i]) === 'number') && !Number.isNaN(arr[i])) {
 

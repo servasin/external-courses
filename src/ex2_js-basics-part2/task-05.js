@@ -1,7 +1,7 @@
 'use strict'
 
 function getMaxValue(arr) {
-  if (Array.isArray(arr) === false) {
+  if (!Array.isArray(arr)) {
     return 'это не массив';
   }
 
