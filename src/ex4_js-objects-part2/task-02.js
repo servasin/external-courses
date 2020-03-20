@@ -1,7 +1,7 @@
 'use strict'
 
 function getObjectWithoutPrototype() {
-       return Object.setPrototypeOf({}, null);
+       return Object.create(null);
 }
 
 module.exports = getObjectWithoutPrototype;

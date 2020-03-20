@@ -2,14 +2,15 @@
 
 function toTitleCase(str) {
   if (typeof str === 'string') {
-    let strToArr = str.split(' ');
-    for (let i = 0; i < strToArr.length; i++) {
-      strToArr[i] = strToArr[i][0].toUpperCase() + strToArr[i].slice(1);
-    }
-    strToArr = strToArr.join(' ');
-    return strToArr;
+
+    return str.split(' ').map(function(item) {
+      
+      return item[0].toUpperCase() + item.slice(1);
+    }).join(' ');
   }
   return undefined;
 }
+
+console.log(toTitleCase('ff ghh jjj'));
 
 module.exports = toTitleCase;
