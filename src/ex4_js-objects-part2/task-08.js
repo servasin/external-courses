@@ -7,7 +7,6 @@ function toLowerCamelCase(str) {
     for (let i = 1; i < chars.length; i++) {
       chars[i] = chars[i][0].toUpperCase() + chars[i].slice(1);
     }
-
     return chars.join('');
   }
 

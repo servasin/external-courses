@@ -1,17 +1,13 @@
 'use strict'
 
 function getRandomInt(min, max) {
-  if (typeof min === 'number' &&
-      typeof max === 'number' &&
-      !Number.isNaN(min) && !Number.isNaN(max)) {
-      // Не вижу смысла вводить здесь новые переменные.
-      min = Math.ceil(min); // eslint-disable-line no-param-reassign
-      max = Math.floor(max); // eslint-disable-line no-param-reassign
+  if (typeof min === 'number'
+      && typeof max === 'number'
+      && !Number.isNaN(min)
+      && !Number.isNaN(max)) {
       return Math.floor(Math.random() * (max - min)) + min;
   }
-  return 'something';
-  // если написать проосто return, то lint выдает ошибку
-  // хочет чтобы я возвращал значение, поэтому приходится что-то возвращать.
+  return undefined;
 }
 
 module.exports = getRandomInt;

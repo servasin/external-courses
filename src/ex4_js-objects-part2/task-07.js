@@ -6,9 +6,9 @@ function trimString(string, length) {
       && !Number.isNaN(length)
       && length >= 0) {
     if(string.length > length) {
-
       return string.slice(0, length - 1) + '\u2026';
     }
+    
     return string;
   }
   return undefined;

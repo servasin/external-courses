@@ -2,10 +2,9 @@
 
 function reverseString(string) {
   if (typeof string === 'string') {
-    let newString = string.split('').reverse().join('');
-    return newString;
+    return string.split('').slice().reverse().join('');
   }
   return undefined;
 }
-
+console.log(reverseString('my string'));
 module.exports = reverseString;
