@@ -2,7 +2,7 @@
 
 function reverseString(string) {
   if (typeof string === 'string') {
-    return string.split('').slice().reverse().join('');
+    return string.split('').reverse().slice().join('');
   }
   return undefined;
 }

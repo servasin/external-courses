@@ -3,7 +3,7 @@
 function deleteFirstAndLastSpaces(str) {
   if(typeof str === 'string') {
     let chars = str.slice().split('');
-    // мы ж новый массив создали, создали
+    
     if(chars[0] === ' ') {
       chars = chars.slice(1);
     }

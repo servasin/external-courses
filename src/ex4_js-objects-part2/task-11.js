@@ -13,7 +13,6 @@ function countCharsInString(string) {
         counter = 0;
       }
       result[chars[i]] = counter + 1;
-      //  в src написано, что тернарный оператор тестами не придусмотрен, так что так
     }
 
     for (let key in result) { // eslint-disable-line guard-for-in
