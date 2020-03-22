@@ -4,49 +4,44 @@ function mySlice(array, start, end) {
   if (Array.isArray(array)) {
 
         let length = array.length
-        let newArr = [];
-        let startInt = Number.parseInt(start, 10);
-        let endInt = Number.parseInt(end, 10);
+        let newArray = [];
 
+        if (start === undefined && end === undefined) {
+          for (let i = 0; i < length; i++) {
+            newArray[i] = array[i];
+          }
+          return newArray;
+        }
         if (Number.isNaN(start) && Number.isNaN(end)) {
-          return newArr;
-        }
-
-        if (typeof start === 'undefined' &&
-            typeof end === 'undefined' ||
-            Number.isNaN(startInt)) {
-          for (let i = 0; i < array.length; i++) {
-            newArr[i] = array[i];
-          }
-          return newArr;
-        }
-
-        if (typeof end === 'undefined') {
-          endInt = length;
-        } else {
-          if (end === 0 || -end >= length || Number.isNaN(endInt)) {
-            return newArr;
-          }
-          if (end < 0) {
-            endInt = length + end;
-          }
-          if (end > length) {
-            endInt = length;
-          }
+          return newArray;
         }
 
         if (start < 0) {
           if (-start > length) {
-            startInt = 0;
+            start = 0; // eslint-disable-line no-param-reassign
           } else {
-            startInt = length + start
+            start = length + start; // eslint-disable-line no-param-reassign
           }
         }
 
-        while (startInt < endInt) {
-          newArr.push(array[startInt++]);
+        if (end === undefined) {
+          end = length; // eslint-disable-line no-param-reassign
+        } else {
+          if (end === 0 || -end >= length) {
+            return newArray;
+          }
+          if (end < 0) {
+            end = length + end; // eslint-disable-line no-param-reassign
+          }
+          if (end > length) {
+            end = length; // eslint-disable-line no-param-reassign
+          }
         }
-        return newArr;
+
+        while (start < end) {
+          newArray.push(array[start++]) // eslint-disable-line no-param-reassign
+        }
+        return newArray;
   }
   return undefined;
 }
