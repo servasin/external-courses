@@ -17,3 +17,15 @@ a {
 p {
   font-weight: bold;
 }
+pre {
+  display: inline-block;
+}
+table {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid black;
+}
