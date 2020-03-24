@@ -5,11 +5,9 @@ function addNewProp(str, obj) {
       && typeof obj === 'object'
       && !Array.isArray(obj)) {
 
-        let newObj = Object.assign
-        if ( !(str in newObj) ) {
-          newObj[str] = 'new'
-
-          return newObj;
+        if ( !(str in obj) ) {
+          obj[str] = 'new'// eslint-disable-line no-param-reassign
+          return obj;
         }
   }
   return obj;
