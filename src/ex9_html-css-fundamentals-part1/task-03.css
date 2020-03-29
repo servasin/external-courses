@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper-outer {
+  border: 1px solid #888;
+  border-radius: 19px;
+  padding: 3px;
+  box-shadow: -1px 1px 5px 0px #000;
+}
+.wrapper-iner {
+  padding: 4px;
+  border-radius: 17px;
+  background-color: #dfdfdf;
+}
+button {
+  box-sizing: border-box;
+  width: 260px;
+  height: 60px;
+  border-radius: 15px;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #666;
+  border: 1px solid #888;
+  position: relative;
+  background: linear-gradient(180deg, #dfdfdf 0%, #b0b0b0 100%);
+  box-shadow: 1px 2px 5px 1px #b0b0b0;
+}
+button::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Star_empty.svg/471px-Star_empty.svg.png');
+  background-size: contain;
+}
+button::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Star_empty.svg/471px-Star_empty.svg.png');
+  background-size: contain;
+}
