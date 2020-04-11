@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kanban-board</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__wrapper">
+			<div class="header__left">
+				<img src="img/logo.svg" alt="logo" class="header__logo">
+				<h1 class="header__title">Awesome Kanban Board</h1>
+			</div>
+			<div class="header__right">
+				<button class="header__btn">Create new list</button>
+				<div class="header__profile">
+					<img src="img/avatar.svg" alt="avatar" class="header__profile-photo">
+					<button class="header__profile-btn"></button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div style="height: calc(100vh - 110px); display: flex;align-items: center;justify-content: center;">
+		CONTENT HERE
+	</div>
+
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__left">
+				<p class="footer__active">Active tasks: &lt;N&gt;</p>
+				<p class="footer__finish">Finished tasks: &lt;N&gt;</p>
+			</div>
+			<div class="footer__right">
+				<p class="footer__name">Kanban board by &lt;NAME&gt;</p>
+				<p class="footer__year">&lt;YEAR&gt;</p>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
