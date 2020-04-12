@@ -24,3 +24,17 @@ div:nth-child(4) img {
   background-color: #f9e2b8;
   height: 350px;
 }
+
+.image {
+	float: left;
+	width: 50%;
+	height: 220px;
+  height: 440px;
+	overflow: hidden;
+}
+
+.image--fake {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNb7-43dD6_FyX6us-8msF_GIacIOFf18U6lnIKACQu3LN47tk&usqp=CAU');
+  background-size: cover;
+  background-position: center;
+}
