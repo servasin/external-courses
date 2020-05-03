@@ -1,0 +1,26 @@
+div {
+  display: inline-block;
+  width: 33%;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+  height: 440px;
+  object-fit: cover;
+}
+
+.first {
+  border: 10px solid #ff00fc;
+}
+
+.second {
+  box-shadow: 10px 10px #c71616, -10px -10px #7d9a07;
+}
+
+.third {
+  border: 50px solid #40c4c8;
+  border-image: url(https://sun9-72.userapi.com/c9708/u61729525/e_7ef2c454.jpg?ava=1) 50 round round;
+  background-color: #f9e2b8;
+  height: 350px;
+}

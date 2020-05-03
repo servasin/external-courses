@@ -1,0 +1,121 @@
+h1 {
+  margin: 0;
+  padding: 1rem;
+  color: #d230d2;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+.red {
+  background-color: #ff5353;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: #49b549;
+}
+.cyan {
+  background-color: cyan;
+}
+.blue {
+  background-color: #5353f9;
+}
+.violet {
+  background-color: violet;
+}
+.gradient-block {
+  position: relative;
+  height: 300px;
+  background: #49b549;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  background: linear-gradient(90deg, rgba(58,180,175,1) 0%,
+                                    rgba(253,29,240,1) 49%,
+                                    rgba(239,252,69,1) 100%);
+}
+.gradient-block::after {
+  content: '';
+  background-image: url('http://pngimg.com/uploads/floral_frame/floral_frame_PNG204.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.big-boy {
+  margin: 0 auto;
+  width: 300px;
+}
+a {
+  color: #e028d2eb;
+  position: absolute;
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+  margin-top: 15px;
+  font-size: 25px;
+  z-index: 1;
+  background: linear-gradient(90deg, #fd05d6 31%, #0049ec 59%, #26f1cb);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -webkit-animation:zoom 1.5s linear infinite;
+ -moz-animation:zoom 1.5s linear infinite;
+ animation:zoom 1.5s linear infinite;
+ animation-direction: alternate;
+}
+@-moz-keyframes zoom {
+  100% { -moz-transform: scale(1.3); }
+}
+@-webkit-keyframes zoom {
+  100% { -webkit-transform: scale(1.3); }
+}
+@keyframes zoom {
+  100% { -webkit-transform: scale(1.3); }
+}
+.flower {
+  width: 250px;
+  position: absolute;
+  -webkit-animation:rotation 9s linear infinite;
+  -moz-animation:rotation 9s linear infinite;
+  animation:rotation 9s linear infinite;
+}
+.flower--left {
+  left: 6%;
+}
+.flower--right {
+  right: 6%;
+}
+@-moz-keyframes rotation {
+  100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes rotation {
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes rotation {
+  100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+}
+p {
+  font-weight: bold;
+}
+pre {
+  display: inline-block;
+}
+table {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
