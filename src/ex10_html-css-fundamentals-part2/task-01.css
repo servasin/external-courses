@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mask {
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+  -webkit-mask-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/505px-Apple_logo_black.svg.png);
+}
